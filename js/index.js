@@ -72,6 +72,9 @@ function addEventsToHTML(events){
     endedEvents.length = 0;
     uppcomingEvents.length = 0;
 
+    // Sort of events
+    events.sort((a,b) => (a.DTSTART > b.DTSTART) ? 1 : ((b.DTSTART > a.DTSTART) ? -1 : 0))
+
     document.getElementById("event-container").innerHTML = "";
 
     events.forEach(event => {
@@ -209,6 +212,8 @@ function start(){
     getLocalStorage();     
 }
 function loop(){
+    document.getElementById("name").innerHTML = "";
+    document.getElementById("name").appendChild(document.createTextNode(nameMonitor));
     startTime();
     getICS();
     setTimeout(loop, 10000);
@@ -225,8 +230,6 @@ function getLocalStorage(){
         }else{
             nameMonitor = localStorage.getItem("nameMonitor");
             icsURL = localStorage.getItem("icsURL");
-            document.getElementById("name").innerHTML = "";
-            document.getElementById("name").appendChild(document.createTextNode(nameMonitor));
             loop();
         }
     }

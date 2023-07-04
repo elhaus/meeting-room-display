@@ -38,7 +38,7 @@ For Google Calendar you can publish an ICS feed if you go to
 - Settings (Cog up in the right corner),
 - Choose the calednar you want to choose, (in the left menu)
 - Make your calendar publicaly available under "Access permissions for events",
-- To get the direct ics link go to "Integrate calendar" section and there it is in the "Public adress in iCal format" box
+- To get the direct ics link go to "Integrate calendar" section and there it is in the "Public address in iCal format" box
 [Link to Google documentation](https://support.google.com/calendar/answer/37083?hl=en)
 
 ## Installation
@@ -48,7 +48,7 @@ This means that you might need to do one of the following
 - Disable [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) on your browser / whitelist the URL of the [Meeting Room Dispaly](https://klovaaxel.github.io/meeting-room-display/) (can easily be done with a chromium plugin)
 
 ### Steps to install
-1. Ethier use this github pages as is or fork this repository and publsih your fork as a webpage accessible form your hardware.
+1. Ethier use this github pages as is or fork this repository and publish your fork as a webpage accessible form your hardware.
 
     -  If forked or downloaded, customize your version with your branding!
 
